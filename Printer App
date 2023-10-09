@@ -1,0 +1,26 @@
+public class Hao {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+System.out.println("pinter App");
+System.out.println("This app is made by  : ");
+String creator = "Hao";
+System.out.println("This app is made by "+ "Hao" );
+int number1 = 10;
+int number2 = 2;
+System.out.println( number1 );
+System.out.println("The value of number1 is " + number1 );
+System.out.println("The value of number2 is " + number2 );
+int multiplication = number1 * number2 ;
+System.out.println( multiplication );
+int addition = number1 + number2 ;
+System.out.println( addition );
+int devision = number1 / number2 ;
+System.out.println( devision );
+int substraction = number1 - number2 ;
+System.out.println( substraction ) ;
+
+
+	}
+
+}
