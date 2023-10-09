@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class GussingGame {
+	public static void main(String[] args) {
+	     Scanner name = new Scanner(System.in);
+	     String correctName = "Tommi";
+	int numberOfGuesses = 0;
+
+    do {
+	     System.out.println("Please, guess my name: ");
+	     String userGuess = name.nextLine();
+	     numberOfGuesses++;
+    if (userGuess.equalsIgnoreCase(correctName)) {
+	      System.out.println("Congratulations! You guessed it right.");
+	      System.out.println("Number of guesses: " + numberOfGuesses);
+	break;
+    } else {
+	      System.out.println("Do you want to quit? (yes/no): ");
+	      String quitChoice = name.nextLine().toLowerCase();
+	 if (quitChoice.equals("yes")) {
+	      System.out.println("The correct name was: " + correctName);
+	 break;
+	               }
+	           }
+	       } while (true);
+
+	        name.close();
+	    }
+	}
